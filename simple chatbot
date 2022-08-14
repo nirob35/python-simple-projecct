@@ -1,0 +1,16 @@
+qn = {
+    'hello' : 'Hi',
+    'Hello' : 'Hi',
+    'how are you' : 'I am fine.'
+
+} # these are the question
+while True:  # infinity loop until it stopped
+    try:        # try is used for if input can be founded in upper dictionaries
+        ques = input() # take input
+        if ques == 'quit':
+            break   # input is taken as quit then  it will be stopped
+        else:
+            print(qn[ques])   #  if input is same as dictionaries key
+    except:
+        print("I don't know") # try is used for if input can not be founded in upper dictionaries
+
